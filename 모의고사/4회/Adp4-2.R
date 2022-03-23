@@ -28,4 +28,21 @@ formula_up <- lm(revenues~google_adwords+facebook+twitter+marketing_total+employ
 step(formula_low,scope=list(upper=formula_up),direction = 'forward')
 
 
-#3.
+#3.전진선택법을 사용해 변수를 선택한 후 새롭게 생성한 회귀모형에 대한 잔차분석 수행
+imstall.packages("lmtest")
+library(lmtest)
+
+#독립성
+#더빈왓슨
+dwtest(bike_lm)
+#2에 가깝기 때문에 독립성 가정을 만족한다고 판단
+
+#정규성
+#shapiro
+shapiro.test(resid(bike_lm))
+#p-value값이 0.05보다 작아 대립가설을 기각 
+#따라서 정규분포를 따른다고 할 수 있음
+
+#등분산성과 정규성
+par(mfrow=c(2,2))
+plot(bike_lm)
