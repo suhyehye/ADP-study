@@ -18,6 +18,14 @@ summary(result)
 # 인구밀집정도에 따른 매출은 통계적으로 유의한 차이가 없다고 판단
 
 #2. google_adwords, facebook, twitter, marketing_total, employees가 revenues에 영향을 미치는지 알아보는 회귀분석
-##전진 선택법
+##회귀모형
 bike_lm <- lm(revenues~google_adwords+facebook+twitter+marketing_total+employees, data = data)
 summary(bike_lm)
+
+##전진선택법
+formula_low <- lm(revenues~1, data = data)
+formula_up <- lm(revenues~google_adwords+facebook+twitter+marketing_total+employees,data=data)
+step(formula_low,scope=list(upper=formula_up),direction = 'forward')
+
+
+#3.
