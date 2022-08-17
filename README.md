@@ -1,4 +1,7 @@
 # study
+
+공부 정리 노션 : https://www.notion.so/Study-For-ADP-685976e62b7c4f9c98b91f88bcc173f9
+
 - 기출문제 복원 풀이 
   (https://www.kaggle.com/code/kukuroo3/solution-python-p1/notebook)
 - Adp 실기 모의고사 풀이
