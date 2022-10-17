@@ -1,5 +1,5 @@
 ### 제 26회 ADP 합격 후기
-![adp] (https://github.com/suhyehye/ADP-study/issues/1#issue-1410378774.png)
+![adp](https://github.com/suhyehye/ADP-study/issues/1#issue-1410378774.png)
 
 #### BASE
 - 산업공학과 4학년 
